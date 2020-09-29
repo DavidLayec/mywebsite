@@ -4,9 +4,10 @@
 .table{display:table;table-layout:fixed}
 .noTrans{transition:none;-webkit-transition:none}
 .clear{clear:both}.noGap{padding:0 !important}
-@font-face{font-family:'Consolas';src:url('../fonts/Consolas.eot');src:url('../fonts/Consolas.eot?#iefix') format('embedded-opentype'),url('../fonts/Consolas.woff') format('woff'),url('../fonts/Consolas.ttf') format('truetype'),url('../fonts/Consolas.svg#af2fa94b953e46dc77e59983b9e9c303') format('svg');font-style:normal}
-@font-face{font-family:'Roboto';src:url('../fonts/Roboto-Regular.eot');src:url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Roboto-Regular.woff') format('woff'),url('../fonts/Roboto-Regular.ttf') format('truetype'),url('../fonts/Roboto-Regular.svg#f4ba68a9596ca53347cecdb9c6e48d01') format('svg');font-style:normal}
-@font-face{font-family:'RobotoLight';src:url('../fonts/Roboto-Light.eot');src:url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/Roboto-Light.woff') format('woff'),url('../fonts/Roboto-Light.ttf') format('truetype'),url('../fonts/Roboto-Light.svg#14cfc794995ce651ee6fc06de48ff027') format('svg');font-style:normal}[class^="icon-"]:before,[class*=" icon-"]:after,[class^="icon-"]:after,[class*=" icon-"]:before{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="icon-"] span.hidden,[class*=" icon-"]
+@font-face{font-family: 'Roboto', sans-serif}
+@font-face{font-family: 'Roboto', sans-serif}
+@font-face{font-family: 'Roboto', sans-serif}
+:before,[class*=" icon-"]:after,[class^="icon-"]:after,[class*=" icon-"]:before{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="icon-"] span.hidden,[class*=" icon-"]
 span.hidden{display:inline-block;height:0;width:0;overflow:hidden}
 .s-title1{margin:40px 0 30px;font-family:"Roboto";font-size:3.52941176em;line-height:1.16666667em;color:#fff}
 @media (max-width:992px){.s-title1{font-size:2.64705882em;line-height:1.28888889em}}
@@ -62,5 +63,4 @@ a{-webkit-transition:all 250ms ease-out;transition:all 250ms ease-out;text-decor
 .Share a:hover{color:#fff}
 .Share a:hover:before{width:100%}a:focus{-webkit-box-shadow:0 0 5px 3px #ed1c24;box-shadow:0 0 5px 3px #ed1c24}*::selection{background:#ed1c24;color:#fff}*::-moz-selection{background:#ed1c24;color:#fff}a::selection{color:#000}a::-moz-selection{color:#000}
 .s-paragraphe.s-paragraphe--full{width: 100%; margin-top: 30px}
-
 
