@@ -37,7 +37,7 @@ a{-webkit-transition:all 250ms ease-out;transition:all 250ms ease-out;text-decor
 .Slice-count:after{left:inherit;right:-75px}.Works{margin-top:60px}
 .Works-project{width:100%;padding:30px 0;border-top:1px solid #3f3d3d;color:#fff;font-family: 'Roboto', sans-serif;font-size:.94117647em;line-height:1.875em}
 .Works-project:last-child{border-bottom:1px solid #3f3d3d}
-.Works-project:hover{background:#ed1c24}
+.Works-project:hover{background-image: url(https://media.giphy.com/media/8UXPjYL6IZVWU/giphy.gif)}
 .Works-project:hover
 .s-intitule2,.Works-project:hover
 .c-grey{color:#f4888c}
