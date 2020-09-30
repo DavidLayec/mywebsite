@@ -16,7 +16,24 @@
 
   </head>
 
-<iframe  style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/6DMKRipfYS0?&autoplay=1&loop=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script>
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background
+  }
+</script>
+
+
+<iframe id="iframeAudio" style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/6DMKRipfYS0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<audio autoplay loop  id="playAudio">
+    <source width="560" height="315" src="https://www.youtube.com/embed/6DMKRipfYS0?&autoplay=1&loop=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</audio>
+
+
 
   <body cz-shortcut-listen="true">
 
@@ -25,7 +42,7 @@
 
         <div class="Slice">
             <div class="Slice-count s-intitule1">Hello</div>
-            <h1 class="s-title1">I'm David Layec,<br>a 26 y/o freelance<br>full stack developer</h1>
+            <h1 class="s-title1">I'm David,<br>a 26 y/o freelance<br>full stack developer</h1>
             <div class="s-paragraphe">
                 With a <span class="s-bold">business background</span> I recently decided to focus on <strong>full stack web development</strong>.
                 I love to make custom websites, <span class="s-bold">accessible</span> and <span class="s-bold">SEO-friendly</span>.
