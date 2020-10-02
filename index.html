@@ -14,10 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
   <body cz-shortcut-listen="true">
-
-      <a href="#en" onclick="timeFunction()" data-reload>English</a>
-      <a href="#fr" onclick="timeFunction()" data-reload>Francais</a>
-
+      <div class="Languages">
+        <li class="lili"><a class="s-intitule2" href="#en" onclick="timeFunction()" data-reload>English</a></li>
+        <li class="lili"><a class="s-intitule2" href="#fr" onclick="timeFunction()" data-reload>Francais</a></li>
+      </div>
 
       <iframe src="musics/silence1.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
       <audio id="player" autoplay loop>
