@@ -29,10 +29,10 @@
         <div class="container">
           <div class="Slice">
               <div class="Slice-count s-intitule1" id="hi">Hello</div>
-              <h1 class="s-title1" id="presentation">I'm David,<br>a 26 y/o freelance<br>full stack developer</h1>
-              <div class="s-paragraphe" id="p2">
-                  <span> With a </span> <span class="s-bold">business background</span> I focus on <span class="s-bold">full stack web development</span>.
-                  <br>I love to make <span class="s-bold">custom websites</span> , <span class="s-bold">accessible</span> and <span class="s-bold">SEO-friendly</span>.
+              <h1 class="s-title1"> <span id="moi">I'm David</span>,<br><span id="age">a 26 y/o freelance</span><br><span id="stack">full stack developer</span></h1>
+              <div class="s-paragraphe">
+                  <span id=with2> With a </span> <span class="s-bold" id="business">business background</span>, <span id="on">I focus on</span> <span class="s-bold" id="full">full stack web development</span>.
+                  <br> <span id='love'>I love to make </span> <span class="s-bold" id="custom">custom websites</span> , <span class="s-bold" id="accessible">accessible</span> <span id="and">and</span> <span class="s-bold" id="seo">SEO-friendly</span>.
                   <br> Based in <strong class="s-bold">Berlin</strong>, I'm currently <span class="s-bold">available as freelance</span>.
               </div>
           </div>
@@ -84,10 +84,10 @@
 
         <div class="Slice">
             <div class="Slice-count s-intitule1">Contact</div>
-            <div class="s-title1">Get in touch ?</div>
+            <div class="s-title1" id="touch">Get in touch ?</div>
             <div class="s-paragraphe">
-                The easiest way to contact me is to send me an email to <span class="s-italic">david.layec.b@gmail.com</span>.<br>
-                You can also find me on the social networks listed here.
+                <span id="easiest">The easiest way to contact me is to send me an email to</span> <span class="s-italic" id="layec">david.layec.b@gmail.com</span>.<br>
+                <span id="social">You can also find me on the social networks listed here</span>:
             </div>
 
             <ul class="Share">
@@ -110,13 +110,43 @@
       var language = {
         en: {
           welcome:"Hello",
-          moi:"I'm David,a 26 y/o freelance full stack developer",
-          projet:"Latest Projects"
+          moi1:"I'm David",
+          age1:"a 26 y/o freelance",
+          stack1: "full stack developer",
+          projet:"Latest Projects",
+          with1: "With a",
+          business1: "business background",
+          on1: "I focus on",
+          full1: "full stack web development",
+          love1: "I love to make ",
+          custom1: "custom website",
+          accessible1: "accessible",
+          and1: "and",
+          seo1: "SEO friendly",
+          touch1: "Get in touch?",
+          easiest1: "The easiest way to contact me is to send me an email to",
+          social1: "You can also find me on the social networks listed here"
         },
         fr: {
           welcome:"Bienvenue",
-          moi:"Je suis David, développeur web full stack",
-          projet:"Projets Recents"
+          moi1:"Je suis David",
+          age1:"full stack developer",
+          stack1: "freelance de 26 ans",
+          projet:"Projets Recents",
+          with1: "Dote d'un",
+          business1: "background business",
+          on1: "Je me concentre sur",
+          full1: "le développement de sites web",
+          love1: "J'aime créer",
+          custom1: "des sites web personnalisés",
+          accessible1: "accessibles",
+          and1: "et",
+          seo1: "SEO friendly",
+          touch1: "Prenez contact?",
+          easiest1: "Le moyen le plus simple de me contacter est de m'envoyer un email à",
+          layec1: "david.layec.b@gmail.com",
+          social1: "Vous pouvez également me trouver sur les réseaux sociaux énumérés ici"
+
         }
       };
 
@@ -125,8 +155,22 @@
         if(window.location.hash === "#fr") {
           hi.textContent = language.fr.welcome;
           latest.textContent = language.fr.projet;
-          presentation.textContent = language.fr.moi;
-          p2.textContent = language.fr.para;
+          moi.textContent = language.fr.moi1;
+          age.textContent = language.fr.age1;
+          stack.textContent = language.fr.stack1;
+          with2.textContent = language.fr.with1;
+          business.textContent = language.fr.business1;
+          on.textContent = language.fr.on1;
+          full.textContent = language.fr.full1;
+          love.textContent = language.fr.love1;
+          custom.textContent = language.fr.custom1;
+          accessible.textContent = language.fr.accessible1;
+          and.textContent = language.fr.and1;
+          seo.textContent = language.fr.seo1;
+          touch.textContent = language.fr.touch1;
+          easiest.textContent = language.fr.easiest1;
+          layec.textContent = language.fr.layec1;
+          social.textContent = language.fr.social1;
         }
       }
 
