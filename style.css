@@ -30,7 +30,7 @@ a{-webkit-transition:all 250ms ease-out;transition:all 250ms ease-out;text-decor
 
 .Slice{margin:0px 0 120px 0}
 @media (max-width:992px){.Slice{margin:90px 0}}
-@media (max-width:767px){.Slice:first-child{margin:30px 0 90px}}
+@media (max-width:767px){.Slice:first-child{margin:0px 0 90px}}
 .Slice-count{position:relative;counter-increment:nb-slice}
 @media (max-width:992px){.Slice-count{left:125px}}
 .Slice-count:before{content:'0' counter(nb-slice);position:absolute;color:#ff792e;left:-125px}
