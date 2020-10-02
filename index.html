@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
       <meta charset="utf-8">
       <title>David Layec | Full stack web developer, Berlin</title>
@@ -14,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
   <body cz-shortcut-listen="true">
+
+      <a href="#eng" data-reload>English</a>
+      <a href="#fr" data-reload>Francais</a>
+
+
       <iframe src="musics/silence1.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
       <audio id="player" autoplay loop>
       <source src="musics/Overdog.mp3" type="audio/mp3">
@@ -23,7 +28,7 @@
       <section class="PageLayout" role="main">
         <div class="container">
           <div class="Slice">
-              <div class="Slice-count s-intitule1">Hello</div>
+              <div class="Slice-count s-intitule1" id="hi">Hello</div>
               <h1 class="s-title1">I'm David,<br>a 26 y/o freelance<br>full stack developer</h1>
               <div class="s-paragraphe">
                   With a <span class="s-bold">business background</span> I focus on <span class="s-bold">full stack web development</span>.
@@ -95,8 +100,26 @@
     <!-- End Content -->
 
     <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
-        var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-22698826-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+      var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-22698826-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
     </script>
+
+    <script type="text/javascript">
+      var language = {
+        eng: {
+          welcome:"Hello"
+        },
+        fr: {
+          welcome:"Bienvenu"
+        }
+      };
+
+      if (window.location.hash) {
+        if(window.location.hash === "#fr") {
+          hi.textContent = language.fr.welcome;
+        }
+      }
+    </script>
+
   </body>
 </html>
 
