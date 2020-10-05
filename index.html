@@ -8,7 +8,7 @@
       <meta name="geo.placename" content="Berlin">
       <meta name="geo.region" content="GER">
 
-      <link rel="shortcut icon" href="https://emoji.slack-edge.com/T02NE0241/david/d885bbc882db9d53.png" type="image/png">
+      <link rel="shortcut icon" href="images/logon.png" type="image/png">
       <link rel="stylesheet" href="assets/css/reset.min.css">
       <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
         <div class="container">
           <div class="Slice">
               <div class="Slice-count s-intitule1" id="hi">Hello</div>
-              <h1 class="s-title1"> <span id="moi">I'm David</span>,<br><span id="age">a 26 y/o freelance</span><br><span id="stack">full stack developer</span></h1>
+              <h1 class="s-title1"> <span id="moi">I'm David</span>,<br><span id="age">a 26 y/o freelance</span><br><span id="stack">Full stack developer</span></h1>
               <div class="s-paragraphe">
                   <span id=with2> Coming from </span> <span class="s-bold" id="business"> a business background</span>,
                   <br> <span id='love'>I love to make </span> <span class="s-bold" id="custom">custom websites,</span> <span class="s-bold" id="accessible">accessible</span> <span id="and">and</span> <span class="s-bold" id="seo">SEO-friendly</span>.
@@ -124,32 +124,40 @@
           seo1: "SEO friendly",
           touch1: "Get in touch?",
           easiest1: "The easiest way to contact me is to send me an email to",
-          social1: "You can also find me on the social networks listed here"
+          social1: "You can also find me on the social networks listed here",
+          based1: "Based in",
+          currently1: "I'm currently",
+          freelance1: "available as freelance"
         },
         fr: {
           welcome:"Bienvenue",
           moi1:"Je suis David",
-          age1:"developpeur web",
-          stack1: "freelance de 26 ans",
+          age1:"Developpeur web",
+          stack1: "Full stack de 26 ans",
           projet:"Projets Recents",
-          with1: "Muni d'un",
+          with1: "Accompagné d'un",
           business1: "background business",
           love1: "j'aime créer",
-          custom1: "des sites web personnalisés",
+          custom1: "des sites web personnalisés,",
           accessible1: "accessibles",
           and1: "et",
           seo1: "SEO friendly",
           touch1: "Rencontrons nous?",
           easiest1: "Le moyen le plus simple de me contacter est de m'envoyer un email à",
           layec1: "david.layec.b@gmail.com",
-          social1: "Vous pouvez également me trouver sur les réseaux sociaux énumérés ici"
-
+          social1: "Vous pouvez également me trouver sur les réseaux sociaux énumérés ici",
+          based1: "Résidant à",
+          currently1: "Je suis actuallement",
+          freelance1: "disponible en freelance"
         }
       };
 
       // define language via window hash appearing in url
       if (window.location.hash) {
         if(window.location.hash === "#fr") {
+          based.textContent = language.fr.based1;
+          currently.textContent = language.fr.currently1;
+          freelance.textContent = language.fr.freelance1;
           hi.textContent = language.fr.welcome;
           latest.textContent = language.fr.projet;
           moi.textContent = language.fr.moi1;
