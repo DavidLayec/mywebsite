@@ -86,4 +86,6 @@ a{-webkit-transition:all 250ms ease-out;transition:all 250ms ease-out;text-decor
 }
 #nouveau-titre {
   text-align: center !important;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
