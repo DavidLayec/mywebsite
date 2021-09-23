@@ -84,3 +84,6 @@ a{-webkit-transition:all 250ms ease-out;transition:all 250ms ease-out;text-decor
 .lili{
   list-style-type: none;
 }
+.nouveau-titre {
+  text-align: center !important;
+}
